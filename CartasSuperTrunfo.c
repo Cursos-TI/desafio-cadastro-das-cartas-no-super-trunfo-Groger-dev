@@ -27,6 +27,9 @@ int main() {
     printf("Qual é o PIB de %s? ", cidade1);
     scanf("%f\n", &PIB1);
 
+    printf("Quantos pontos turísticos existem em %s? ", cidade1);
+    scanf("%d\n", &turismo1);
+
     //Impressão da primeira carta
     printf("Carta A01 cadastrada com sucesso!");
 
@@ -35,6 +38,7 @@ int main() {
     printf("População de %s: %d\n", cidade1, populacao1);
     printf("Área: %.2f\n", area1);
     printf("PIB: %.2f\n", PIB1);
+    printf("Pontos turísticos: %d\n", turismo1);
 
         
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
