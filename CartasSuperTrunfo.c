@@ -17,7 +17,7 @@ int main() {
     scanf(" %s", codigo1);
     
     printf("Insira o nome do estado: ");
-    scanf(" %50[^\n]", estado_A);
+    scanf(" %50[^\n]", estado_A); //Ajuste para nomes compostos
 
     printf("Insira o nome de uma cidade pentencente a %s: ", estado_A);
     scanf(" %50[^\n]", cidade1);
@@ -80,7 +80,7 @@ int main() {
     printf("PIB: %.2f\n", PIB2);
     printf("Pontos turísticos: %d\n", turismo2);
     printf("Código: %s\n", codigo2);
-    
+
         
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
