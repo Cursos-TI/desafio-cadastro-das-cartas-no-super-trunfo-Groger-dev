@@ -17,10 +17,10 @@ int main() {
     scanf(" %s", codigo1);
     
     printf("Insira o nome do estado: ");
-    scanf(" %s", estado_A);
+    scanf(" %50[^\n]", estado_A);
 
-    printf("Insira o nome de uma cidade pertencente a %s: ", estado_A);
-    scanf(" %s", cidade1);
+    printf("Insira o nome de uma cidade pentencente a %s: ", estado_A);
+    scanf(" %50[^\n]", cidade1);
 
     printf("Qual é a população de %s? ", cidade1);
     scanf(" %d", &populacao1);
@@ -49,14 +49,14 @@ int main() {
 
 
     //Cadastro da segunda carta
-    printf("Insira o código da segunda carta: \n");
+    printf("Insira o código da segunda carta: ");
     scanf(" %s", codigo2);
 
     printf("Insira o nome do estado: ");
-    scanf(" %s", estado_B);
+    scanf(" %50[^\n]", estado_B);
 
     printf("Insira o nome de uma cidade pertencente a %s: ", estado_B);
-    scanf(" %s", cidade2);
+    scanf(" %50[^\n]", cidade2);
 
     printf("Qual é a população de %s? ", cidade2);
     scanf(" %d", &populacao2);
@@ -73,14 +73,14 @@ int main() {
     //Impressão da segunda carta
     printf("Carta cadastrada com sucesso!\n");
 
-    printf("Código: %s\n", codigo2);
     printf("Estado: %s\n", estado_B);
     printf("Cidade: %s\n", cidade2);
     printf("População de %s: %d\n", cidade2, populacao2);
     printf("Área: %.2f\n", area2);
     printf("PIB: %.2f\n", PIB2);
     printf("Pontos turísticos: %d\n", turismo2);
-
+    printf("Código: %s\n", codigo2);
+    
         
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
