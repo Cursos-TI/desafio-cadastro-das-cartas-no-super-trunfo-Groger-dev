@@ -7,17 +7,17 @@
 //Teste larissa
 
 int main() {
-    char estado_A[50], estado_B[50], cidade1[50], cidade2[50], codigo1[10], codigo2[10];
+    char estado_A[50], estado_B[50], codigo1[10], codigo2[10], cidade1[50], cidade2[50];
     int populacao1, populacao2, turismo1, turismo2;
     float area1, area2, PIB1, PIB2;
     
 
     //Cadastro da primeira carta
-    printf("Insira o código da primeira carta: ");
-    scanf(" %s", codigo1);
-    
     printf("Insira o nome do estado: ");
     scanf(" %50[^\n]", estado_A); //Ajuste para nomes compostos
+
+    printf("Insira o código da carta: ");
+    scanf(" %s", codigo1);
 
     printf("Insira o nome de uma cidade pentencente a %s: ", estado_A);
     scanf(" %50[^\n]", cidade1);
@@ -49,11 +49,11 @@ int main() {
 
 
     //Cadastro da segunda carta
-    printf("Insira o código da segunda carta: ");
-    scanf(" %s", codigo2);
-
     printf("Insira o nome do estado: ");
     scanf(" %50[^\n]", estado_B);
+
+    printf("Insira o código da carta: ");
+    scanf(" %s", codigo2);
 
     printf("Insira o nome de uma cidade pertencente a %s: ", estado_B);
     scanf(" %50[^\n]", cidade2);
