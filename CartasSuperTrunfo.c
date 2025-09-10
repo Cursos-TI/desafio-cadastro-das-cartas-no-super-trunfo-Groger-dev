@@ -9,7 +9,7 @@
 int main() {
     char estado_A[50], estado_B[50], codigo1[10], codigo2[10], cidade1[50], cidade2[50];
     int populacao1, populacao2, turismo1, turismo2;
-    float area1, area2, PIB1, PIB2;
+    float area1, area2, PIB1, PIB2, densipop1, densipop2, pibcap1, pibcap2;
     
 
     //Cadastro da primeira carta
@@ -34,18 +34,24 @@ int main() {
     printf("Quantos pontos turísticos existem em %s? ", cidade1);
     scanf(" %d", &turismo1);
 
+    densipop1 = populacao1 / area1;
+
+    pibcap1 = PIB1 / populacao1;
+
 
     //Impressão da primeira carta
     printf("Carta cadastrada com sucesso!\n");
 
     
     printf("Estado: %s\n", estado_A);
+    printf("Código: %s\n", codigo1);
     printf("Cidade: %s\n", cidade1);
     printf("População de %s: %d\n", cidade1, populacao1);
     printf("Área: %.2f\n", area1);
     printf("PIB: %.2f\n", PIB1);
     printf("Pontos turísticos: %d\n", turismo1);
-    printf("Código: %s\n", codigo1);
+    printf("Densidade populacional: %.2f hab/km²\n", densipop1);
+    printf("PIB per capita: %.2f reais\n", pibcap1);
 
 
     //Cadastro da segunda carta
@@ -70,16 +76,22 @@ int main() {
     printf("Quantos pontos turísticos existem em %s? ", cidade2);
     scanf(" %d", &turismo2);
 
+    densipop2 = populacao2 / area2;
+
+    pibcap2 = PIB2 / populacao2;
+
     //Impressão da segunda carta
     printf("Carta cadastrada com sucesso!\n");
 
     printf("Estado: %s\n", estado_B);
+    printf("Código: %s\n", codigo2);
     printf("Cidade: %s\n", cidade2);
     printf("População de %s: %d\n", cidade2, populacao2);
     printf("Área: %.2f\n", area2);
     printf("PIB: %.2f\n", PIB2);
     printf("Pontos turísticos: %d\n", turismo2);
-    printf("Código: %s\n", codigo2);
+    printf("Densidade populacional: %.2f hab/km²\n", densipop2);
+    printf("PIB per capita: %.2f reais\n", pibcap2);
 
         
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
